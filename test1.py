@@ -13,7 +13,7 @@ def index():
 	return render_template('hello.html',name=name)
 
 @app.route("/home")
-def eaa():
+def errora():
 	return render_template('500.html')
 
 @app.errorhandler(404)
