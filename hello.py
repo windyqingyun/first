@@ -6,6 +6,7 @@ from flask_wtf import Form
 from wtforms import StringField , SubmitField
 from wtforms.validators import Required
 
+
 class NameForm(Form):
 	name = StringField('hello ,your name?',validators=[Required()])
 	submit = SubmitField('Submit')
@@ -32,6 +33,10 @@ def index():
 @app.route('/home')
 def home():
 	return render_template('404.html')
+
+@app.route('/login')
+def login():
+	return render_template("500.html")
 
 
 if __name__ == "__main__":
