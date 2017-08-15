@@ -35,7 +35,7 @@ def home():
 	return render_template('404.html')
 
 @app.route('/login')
-def login():
+def logian():
 	return render_template("500.html")
 
 
