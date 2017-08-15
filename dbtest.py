@@ -8,6 +8,11 @@ manager = Manager(app)
 def save():
 	user = User('nanshao' ,'nan')
 	user.save()
+ 
+@manager.command
+def close():
+	print "closed"
+
 @manager.command
 def query_users():
 	users = User.query_users()
